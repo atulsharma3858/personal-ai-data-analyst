@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Personal AI Data Analyst", layout="wide")
 
 st.title("🤖 Personal AI Data Analyst")
-st.write("Upload a CSV file and explore your data interactively.")
+st.caption("Created by Atul Sharma")
 
 uploaded_file = st.file_uploader("📂 Upload CSV file", type=["csv"])
 
@@ -36,4 +36,7 @@ if uploaded_file is not None:
     question = st.text_input("Example: What is the average of column X?")
 
     if question:
+
         st.info("AI chat coming next — this version focuses on real analysis.")
+        st.markdown("---")
+st.markdown("👨‍💻 **Created by Atul Sharma**")
